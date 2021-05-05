@@ -25,12 +25,6 @@
     when: always
 
 
-.download-configuration:
-  script:
-    - echo "======= Download configuration ========"
-    - ./Tests/scripts/download_demisto_conf.sh  >> $ARTIFACTS_FOLDER/logs/installations.log
-
-
 .default-before_script:
   before_script:
     - echo "=== Running before script ==="
